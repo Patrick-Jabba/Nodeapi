@@ -1,8 +1,8 @@
 # Nodeapi
 ## Imersão em Desenvolvimento de APIs com Node.js 
-## Objetivo: aprender como criar APIs profissionais para a Web com o melhor treinamento de Node.js do Brasil
-
 ## Tecnologias usadas: <img  alt="Patrick-NodeJs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /><img  alt="Patrick-Postgres" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /><img  alt="Patrick-Docker" src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" /><img  alt="Patrick-Sequelize" src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white" /><img alt="Patrick-Mongo" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+
+## Objetivo: aprender como criar APIs profissionais para a Web com o melhor treinamento de Node.js do Brasil
 
 ## Módulo 1: Sincronia de funções Javascript
 ### Ciclo de vida de aplicações Javascript
