@@ -6,7 +6,7 @@ const Sequelize = require('sequelize');
 const driver = new Sequelize(
   'heroes',
   'postgres',
-  'minhasenhasecreta',
+  'iohtk67DROME',
   {
     host: 'localhost',
     dialect: 'postgres',
