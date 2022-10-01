@@ -29,4 +29,32 @@ setTimeout(() => {
   3: Disconetando
 */
 
-const heroiSchema = new Mongoose
+const heroiSchema = new Mongoose.Schema({
+  nome: {
+    type: String,
+    required: true
+  },
+  poder: {
+    type: String,
+    required: true,
+  },
+  insertedAt: {
+    type: Date,
+    default: new Date(),
+  }
+})
+
+const model = Mongoose.model('heroi', heroiSchema);
+
+async function main () {
+  const resultCadastrar = await model.create({
+    nome: 'Aquaman',
+    poder: 'Falar com animais',
+  })
+  console.log('result cadastrar', resultCadastrar)
+
+  const listItems = await model.find();
+  console.log('item', listItems)
+}
+
+main()
