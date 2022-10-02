@@ -25,7 +25,7 @@ describe('🧪🐘Postgres Suite de Testes', function () {
   });
 
   it('PostgresSQL Connection', async function () {
-    const result = await context.isConnected()
+    const result = await context.isConnected();
     assert.equal(result, true)
   });
 

@@ -9,7 +9,7 @@ class Postgres extends ICrud {
   }
   async isConnected() {
     try {
-      await this.connection.authenticate()
+      await this._connection.authenticate()
       return true;
     }
     catch (error) {
@@ -49,16 +49,19 @@ class Postgres extends ICrud {
   }
 
   static async connect() {
-    const connection = new Sequelize(
-      'heroes',
-      'postgres',
-      'minhasenhasecreta',
+    const sequelize = new Sequelize(
+      'heroes', //database
+      'postgres', //user
+      'minhasenhasecreta', //senha
       {
         host: 'localhost',
         dialect: 'postgres',
+        quoteIdentifiers: false,
+        operatorsAliases: false,
+        logging: false,
       }
-    )
-    return connection;
+    );
+    return sequelize;
   }
 }
 
