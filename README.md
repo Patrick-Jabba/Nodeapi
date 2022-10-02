@@ -34,3 +34,33 @@
 ### Operadores e Conexão
 ### Conhecendo o Mongoose
 ### CREATE, READ, UPDATE, DELETE
+
+## Módulo 8 Refatoração do projeto para bancos mult-schems
+
+## Módulo 9 Node.js e Web Services - criando serviços profissionais com Hapi.js
+### Módulo HTTP
+### Introdução ao Hapi.js
+### Criando a estrutura para criação de API's com Hapi.js
+### Padrão RestFull para desenvolvimento de APIs
+### Listando Items - GET
+### Validando requisições com Joi
+### Cadastrando items - POST
+### Atualizando PATCH/PUT
+### DELETE
+
+## Módulo 10 - Documentação de serviços com Swagger
+### Adicionando Swagger ao nosso Serviço
+
+## Módulo 11 - Autenticação com JSON Web Token (JWT)
+### Como funciona o JWT
+### Configurando o JWT - plugins, testes, e rota de login
+### Criando módulo de autenticação de usuários e hash de senha com bcrypt
+
+## Módulo 12 - Publicação de serviços na Web
+### Trabalhando com multi-environments
+### MongoDB online e gratuito com MongoLab
+### Publicação de nossos serviços e bancos de dados gratuitos com Heroku
+### Trabalhando com PM2 para gerenciamento de apps
+### Expondo cobertura de código com instabul
+
+## Módulo 13 - Próximos passos
