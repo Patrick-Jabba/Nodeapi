@@ -4,40 +4,40 @@
 
 ## Objetivo: aprender como criar APIs profissionais para a Web com o melhor treinamento de Node.js do Brasil
 
-## Módulo 1: Sincronia de funções Javascript
+## Módulo 1: Sincronia de funções Javascript ✅
 ### Ciclo de vida de aplicações Javascript
 ### Callbacks, Introdução a Promises
 ### Refatorando Callbacks para Promises
 
-## Módulo 2: Manipulação de listas
+## Módulo 2: Manipulação de listas ✅
 ### Criando nosso Array.Map, Filter, Reduce
 ### for / forin / forof
 
-## Módulo 3: Introdução a desenvolvimento de testes automatizados
+## Módulo 3: Introdução a desenvolvimento de testes automatizados ✅
 ### Ambiente e configuração de testes
 
-## Módulo 4: Criando ferramentas de linha de comando
+## Módulo 4: Criando ferramentas de linha de comando ✅
 ### Manipulando arquivos READ, CREATE, DELETE, UPDATE
 
-## Módulo 5: Banco de dados - Multi-banco de dados
+## Módulo 5: Banco de dados - Multi-banco de dados ✅
 ### Criando projetos multi-banco de dados
 ### Trabalhando com padrão Strategy para Multi DataSources
 ### Design Patterns
 ### Demonstração multi datasources com strategy design pattern
 
-## Módulo 6: Introdução ao Postgres e Bancos Relacionais
+## Módulo 6: Introdução ao Postgres e Bancos Relacionais ✅
 ### Operadores e Conexão
 ### Conhecendo Sequelize
 ### CREATE, READ, UPDATE, DELETE
 
-## Módulo 7: Introdução ao Mongo e Bancos Não-Relacionais(NoSQL)
+## Módulo 7: Introdução ao Mongo e Bancos Não-Relacionais(NoSQL) ✅
 ### Operadores e Conexão
 ### Conhecendo o Mongoose
 ### CREATE, READ, UPDATE, DELETE
 
-## Módulo 8 Refatoração do projeto para bancos mult-schems
+## Módulo 8 Refatoração do projeto para bancos mult-schems ✅
 
-## Módulo 9 Node.js e Web Services - criando serviços profissionais com Hapi.js
+## Módulo 9 Node.js e Web Services - criando serviços profissionais com Hapi.js 👷‍♂️🚧 em andamento
 ### Módulo HTTP
 ### Introdução ao Hapi.js
 ### Criando a estrutura para criação de API's com Hapi.js
