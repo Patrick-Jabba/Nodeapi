@@ -52,7 +52,7 @@ class Postgres extends ICrud {
     const sequelize = new Sequelize(
       'heroes', //database
       'postgres', //user
-      'minhasenhasecreta', //senha
+      'iohtk67DROME', //senha
       {
         host: 'localhost',
         dialect: 'postgres',
