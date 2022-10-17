@@ -1,5 +1,6 @@
 const BaseRoute = require('./base/baseRoute');
 const Joi = require('joi');
+const Boom = require('boom');
 const failAction = (request, headers, erro) => {
   throw erro;
 }
@@ -35,7 +36,6 @@ class HeroRoutes extends BaseRoute {
             limit,
             nome
           } = request.query
-
           console.log('limit', limit)
           const query = {
             nome: {
@@ -47,7 +47,7 @@ class HeroRoutes extends BaseRoute {
           return this.db.read(nome ? query : {}, skip, limit)
         } catch (error) {
           console.log('DEU RUIM', error)
-          return "Erro interno no servidor!!!"
+          return Boom.internal()
         }
       }
     }
@@ -83,7 +83,83 @@ class HeroRoutes extends BaseRoute {
           }
         } catch (error) {
           console.log('DEU RUIM', error)
-          return 'Internal Error!'
+          return Boom.internal();
+        }
+      }
+    }
+  }
+
+  update() {
+    return {
+      path: '/herois/{id}',
+      method: 'PATCH',
+      config: {
+        validate: {
+          params: {
+            id: Joi.string().required()
+          },
+          payload: {
+            nome: Joi.string().min(3).max(100),
+            poder: Joi.string().min(2).max(100)
+          }
+        }
+      },
+      handler: async (request) => {
+        try {
+          const {
+            id
+          } = request.params;
+
+          const {
+            payload
+          } = request
+          const dadosString = JSON.stringify(payload);
+          const dados = JSON.parse(dadosString);
+
+          const result = await this.db.update(id, dados);
+          if (result.modifiedCount !== 1) {
+            return Boom.preconditionFailed('Id não encontrado no banco!')
+          }
+          return {
+            message: 'Heroi atualizado com sucesso!'
+          }
+
+
+        } catch (error) {
+          console.log('DEU RUIM', error);
+          return Boom.internal();
+        }
+      }
+    }
+  }
+
+  delete() {
+    return {
+      path: '/herois/{id}',
+      method: "DELETE",
+      config: {
+        validate: {
+          failAction,
+          params: {
+            id: Joi.string().required()
+          }
+        }
+      },
+      handler: async (request) => {
+        try {
+          const {
+            id
+          } = request.params;
+          const result = await this.db.delete(id);
+          if (result.deletedCount !== 1) {
+            return Boom.preconditionFailed('Id não encontrado no banco!')
+          }
+          return {
+            message: 'Herói removido com sucesso!'
+          }
+        } catch (error) {
+          console.log('DEU RUIM', error);
+          return Boom.internal();
         }
       }
     }

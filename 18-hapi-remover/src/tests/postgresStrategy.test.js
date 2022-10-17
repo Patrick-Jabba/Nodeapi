@@ -32,7 +32,6 @@ describe('🧪🐘Postgres Suite de Testes', function () {
   it("Cadastrar", async function () {
     const result = await context.create(MOCK_HEROI_CADASTRAR);
     delete result.id;
-    console.log('result', result);
     assert.deepEqual(result, MOCK_HEROI_CADASTRAR);
   });
 
