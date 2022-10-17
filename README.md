@@ -37,7 +37,7 @@
 
 ## Módulo 8 Refatoração do projeto para bancos mult-schems ✅
 
-## Módulo 9 Node.js e Web Services - criando serviços profissionais com Hapi.js 👷‍♂️🚧 em andamento
+## Módulo 9 Node.js e Web Services - criando serviços profissionais com Hapi.js ✅
 ### Módulo HTTP
 ### Introdução ao Hapi.js
 ### Criando a estrutura para criação de API's com Hapi.js
@@ -48,7 +48,7 @@
 ### Atualizando PATCH/PUT
 ### DELETE
 
-## Módulo 10 - Documentação de serviços com Swagger
+## Módulo 10 - Documentação de serviços com Swagger 👷‍♂️🚧 em andamento
 ### Adicionando Swagger ao nosso Serviço
 
 ## Módulo 11 - Autenticação com JSON Web Token (JWT)
